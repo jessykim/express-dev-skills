@@ -9,3 +9,9 @@ const skillSchema = new Schema({
   keyword: String,
   covered: Boolean,
 })
+
+const Skill = mongoose.model('Skill', skillSchema)
+
+export {
+  Skill
+}
