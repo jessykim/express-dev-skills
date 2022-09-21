@@ -12,6 +12,9 @@
     <% skills.forEach(skill => { %>
       <li>
         <%= skill.name %>
+        -
+        <%= skill.keyword %>
+        (<%= skill.covered ? "covered" : "not covered" %>)
       </li>
     <% }) %> 
   </ul>
