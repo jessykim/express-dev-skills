@@ -14,9 +14,8 @@
         <a href="/skills/<%= skill._id %>"><%= skill.name %></a>
         | Week: <%= skill.week %>
         | Unit: <%= skill.unit %> 
-        -
-        Keyword: <%= skill.keyword %>
-        (<%= skill.covered ? "covered" : "not covered" %>)
+        | Keyword: <%= skill.keyword %>
+        | <%= skill.covered ? "COVERED" : "" %>
       </li>
     <% }) %> 
   </ul>

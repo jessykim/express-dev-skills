@@ -9,16 +9,16 @@
 <body>
   <h1>New Skill</h1>
   <form action="/skills" method="post" autocomplete="off">
-    <label for="name">Skill Name</label>
+    <label for="name">Skill Name:</label>
     <input type="text" name="name">
-    <label for="week">Week</label>
+    <label for="week">Week:</label>
     <input type="number" name="week" min="1" max="12">
-    <label for="unit">Unit</label>
+    <label for="unit">Unit:</label>
     <input type="number" name="unit" min="1" max="4">
-    <label for="keyword">Keyword</label>
+    <label for="keyword">Keyword:</label>
     <input type="text" name="keyword">
     <label for="covered">Covered?</label>
-    <input type="checkbox" name="covered" <%= skill.covered ? 'checked' : '' %> >
+    <input type="checkbox" name="covered">
     <button type="submit">Save New Skill</button>
   </form>
 </body>
