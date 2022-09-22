@@ -9,12 +9,12 @@ const skills = [
   {name: 'Express', week: 5, unit: 2, keyword: 'web framework', covered: true},
   {name: 'MongoDB', week: 5, unit: 2, keyword: 'database system', covered: true},
   {name: 'Mongoose', week: 5, unit: 2, keyword: 'object document mapper', covered: true},
-  {name: 'React', week: 8, unit: 3, keyword: 'front-end library', covered: false},
-  {name: 'Python', week: null, unit: 3, keyword: 'programming language', covered: false},
-  {name: 'PostgreSQL', week: null, unit: 4, keyword: 'database system', covered: false},
-  {name: 'Django', week: null, unit: 4, keyword: 'web framework', covered: false},
-  {name: 'jQuery', week: null, unit: 4, keyword: 'JS library', covered: false},
-  {name: 'Flask', week: null, unit: 4, keyword: 'micro web framework', covered: false},
+  // {name: 'React', week: 8, unit: 3, keyword: 'front-end library', covered: false},
+  // {name: 'Python', week: null, unit: 3, keyword: 'programming language', covered: false},
+  // {name: 'PostgreSQL', week: null, unit: 4, keyword: 'database system', covered: false},
+  // {name: 'Django', week: null, unit: 4, keyword: 'web framework', covered: false},
+  // {name: 'jQuery', week: null, unit: 4, keyword: 'JS library', covered: false},
+  // {name: 'Flask', week: null, unit: 4, keyword: 'micro web framework', covered: false},
 ]
 
 export {
