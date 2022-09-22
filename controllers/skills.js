@@ -18,7 +18,7 @@ function newSkill(req, res) {
 }
 
 function create(req, res) {
-  console.log(!!req.body.covered)
+  console.log(req.body)
   req.body.covered = !!req.body.covered
   Skill.create(req.body)
   .then(skill => {

@@ -6,7 +6,7 @@ const skillSchema = new Schema({
   name: String,
   week: Number,
   unit: Number,
-  keyword: String,
+  keywords: String,
   covered: Boolean,
 })
 
