@@ -11,9 +11,11 @@
   <ul>
     <% skills.forEach(skill => { %>
       <li>
-        <%= skill.name %>
+        <a href="/skills/<%= skill._id %>"><%= skill.name %></a>
+        | Week: <%= skill.week %>
+        | Unit: <%= skill.unit %> 
         -
-        <%= skill.keyword %>
+        Keyword: <%= skill.keyword %>
         (<%= skill.covered ? "covered" : "not covered" %>)
       </li>
     <% }) %> 
