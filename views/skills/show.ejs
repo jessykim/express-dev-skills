@@ -5,17 +5,22 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/stylesheets/style.css">
-  <title>Document</title>
+  <title>Skill Information</title>
 </head>
 <body>
-  <h1>Skills</h1>
-  <a href="/skills/<%= skill._id %>/edit">Edit Skill</a>
-  <p>Skill #<%= skill._id %></p>
-  <h2><%= skill.name %></h2>
-  <h3>Week: <%= skill.week %></h3>
-  <h3>Unit: <%= skill.week %></h3>
-  <p>Keywords: <%= skill.keywords %></p>
-  <p>Covered: <%= skill.covered ? 'Yes' : 'No' %></p>
-  <a href="/skills">Go back!</a>
+  <div class="banner">
+    <img id="banner-image" src="https://images.unsplash.com/photo-1584949091598-c31daaaa4aa9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="code">
+  </div>
+  <main>
+    <h1>Skills</h1>
+    <a href="/skills/<%= skill._id %>/edit">Edit Skill</a>
+    <p>Skill #<%= skill._id %></p>
+    <h2><%= skill.name %></h2>
+    <h3>Week: <%= skill.week %></h3>
+    <h3>Unit: <%= skill.week %></h3>
+    <p>Keywords: <%= skill.keywords %></p>
+    <p>Covered: <%= skill.covered ? 'Yes' : 'No' %></p>
+    <a href="/skills">Go back!</a>
+  </main>
 </body>
 </html>

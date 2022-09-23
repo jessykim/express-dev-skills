@@ -1,6 +1,25 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font: 14px "Lucida Grande", Helvetica,Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+  overscroll-behavior: none;
+}
+
+.banner {
+  width: 100%;
+  display: block;
+  height: 200px;
+  overflow: hidden;
+}
+
+#banner-image {
+  width: 100%;
+  display: block;
+}
+
+body > main {
+  padding: 20px 50px;
 }
 
 a {
@@ -14,8 +33,11 @@ a {
 
 .delete-form button {
   color: red;
+  border: 1px solid gray;
+  border-radius: 10px;
 }
 
 li {
   list-style: none;
+  padding: 5px;
 }

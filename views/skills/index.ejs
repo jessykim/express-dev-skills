@@ -8,22 +8,27 @@
   <title>Skills</title>
 </head>
 <body>
-  <h1>Skills as of <%= time %></h1>
-  <ul>
-    <% skills.forEach(skill => { %>
-      <li>
-        <form 
-          action="/skills/<%= skill._id %>?_method=DELETE"
-          class="delete-form"
-          method="POST"
-        >
-          <button type="submit">X</button>
-        </form>
-        <a href="/skills/<%= skill._id %>"><%= skill.name %></a>
-        | <%= skill.covered ? "COVERED" : "" %>
-      </li>
-    <% }) %> 
-  </ul>
-  <a href="/skills/new">Add New Skills Here!</a>
+  <div class="banner">
+    <img id="banner-image" src="https://images.unsplash.com/photo-1584949091598-c31daaaa4aa9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="code">
+  </div>
+  <main>
+    <h1>Skills as of <%= time %></h1>
+    <ul>
+      <% skills.forEach(skill => { %>
+        <li>
+          <form 
+            action="/skills/<%= skill._id %>?_method=DELETE"
+            class="delete-form"
+            method="POST"
+          >
+            <button type="submit">X</button>
+          </form>
+          <a href="/skills/<%= skill._id %>"><%= skill.name %></a>
+          | <%= skill.covered ? "COVERED" : "" %>
+        </li>
+      <% }) %> 
+    </ul>
+    <a href="/skills/new">Add a New Skill Here!</a>
+  </main>
 </body>
 </html>

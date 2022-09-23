@@ -8,19 +8,24 @@
   <title>New Skills</title>
 </head>
 <body>
-  <h1>New Skill</h1>
-  <form action="/skills" method="post" autocomplete="off">
-    <label for="name">Skill Name:</label>
-    <input type="text" name="name">
-    <label for="week">Week:</label>
-    <input type="number" name="week" min="1" max="12">
-    <label for="unit">Unit:</label>
-    <input type="number" name="unit" min="1" max="4">
-    <label for="keywords">Keywords:</label>
-    <input type="text" name="keywords">
-    <label for="covered">Covered?</label>
-    <input type="checkbox" name="covered">
-    <button type="submit">Save New Skill</button>
-  </form>
+  <div class="banner">
+    <img id="banner-image" src="https://images.unsplash.com/photo-1584949091598-c31daaaa4aa9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="code">
+  </div>
+  <main>
+    <h1>New Skill</h1>
+    <form action="/skills" method="post" autocomplete="off">
+      <label for="name">Skill Name:</label>
+      <input type="text" name="name">
+      <label for="week">Week:</label>
+      <input type="number" name="week" min="1" max="12">
+      <label for="unit">Unit:</label>
+      <input type="number" name="unit" min="1" max="4">
+      <label for="keywords">Keywords:</label>
+      <input type="text" name="keywords">
+      <label for="covered">Covered?</label>
+      <input type="checkbox" name="covered">
+      <button type="submit">Save New Skill</button>
+    </form>
+  </main>
 </body>
 </html>
