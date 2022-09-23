@@ -69,6 +69,7 @@ function edit(req, res) {
 }
 
 function update(req, res) {
+  req.body.covered = !!req.body.covered
   Skill.findByIdAndUpdate(req.params.id, req.body, {new: true})
   .then(skill => {
     res.redirect(`/skills/${skill._id}`)
