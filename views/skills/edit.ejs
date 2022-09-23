@@ -7,6 +7,18 @@
   <title>Document</title>
 </head>
 <body>
-  
+  <form action="/skills" method="post" autocomplete="off">
+    <label for="name">Skill Name:</label>
+    <input type="text" name="name" value="<%= skill.name %>">
+    <label for="week">Week:</label>
+    <input type="number" name="week" min="1" max="12" value="<%= skill.week %>">
+    <label for="unit">Unit:</label>
+    <input type="number" name="unit" min="1" max="4" value="<%= skill.unit %>">
+    <label for="keywords">Keywords:</label>
+    <input type="text" name="keywords" value="<%= skill.keywords %>">
+    <label for="covered">Covered?</label>
+    <input type="checkbox" name="covered">
+    <button type="submit">Update Skill</button>
+  </form>
 </body>
 </html>
