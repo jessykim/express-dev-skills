@@ -9,11 +9,12 @@
 </head>
 <body>
   <h1>Skills</h1>
+  <a href="/skills/<%= skill._id %>/edit">Edit Skill</a>
   <h2>Skill #<%= skill._id %></h2>
   <h3>Week: <%= skill.week %></h3>
   <h3>Unit: <%= skill.week %></h3>
-  <h3>Keywords: <%= skill.keywords %></h3>
-  <h3>Covered: <%= skill.covered ? 'Yes' : 'No' %></h3>
+  <p>Keywords: <%= skill.keywords %></p>
+  <p>Covered: <%= skill.covered ? 'Yes' : 'No' %></p>
   <a href="/skills">Go back!</a>
 </body>
 </html>
